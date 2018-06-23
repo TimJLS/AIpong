@@ -6,6 +6,8 @@ async function init(){
 
     //model =  await tf.loadModel('indexeddb://my-model-1');
     model =  await tf.loadModel('https://hkinsley.com/static/tfjsmodel/model.json');
+    //model =  await tf.loadModel('localstorage://tfjsv3/model.json');
+    //model = await tf.loadModel(tf.io.browserFiles([modelJSONFile, weightsFile]));
     //model =  await tf.loadModel('tfjsversion/model.json');
     console.log('model loaded from storage');
     computer.ai_plays = true;
